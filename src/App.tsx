@@ -1,5 +1,10 @@
 import LocomotiveScroll from 'locomotive-scroll'
 import { useEffect } from 'react'
+import { Expertise } from './components/Expertise'
+import { FeaturedCase } from './components/FeaturedCase'
+import { Header } from './components/Header'
+import { Services } from './components/Services'
+import { Video } from './components/Video'
 
 const App = () => {
 	useEffect(() => {
@@ -37,7 +42,15 @@ const App = () => {
 		}
 	}, [])
 
-	return <div id='main' className='w-full h-full'></div>
+	return (
+		<div id='main' className='w-full h-full'>
+			<Header />
+			<Video />
+			<Expertise />
+			<FeaturedCase />
+			<Services />
+		</div>
+	)
 }
 
 export default App
