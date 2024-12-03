@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Expertise } from './components/Expertise'
 import { FeaturedCase } from './components/FeaturedCase'
 import { Header } from './components/Header'
+import { LatestInsights } from './components/LatestInsights'
 import { Services } from './components/Services'
 import { Video } from './components/Video'
 
@@ -49,6 +50,8 @@ const App = () => {
 			<Expertise />
 			<FeaturedCase />
 			<Services />
+			<LatestInsights />
+			
 		</div>
 	)
 }

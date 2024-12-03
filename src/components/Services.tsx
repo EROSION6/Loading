@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 
 interface IServicesCard {
-	isHover: string
+	isHover: boolean
 	setHover: (value: boolean) => void
 }
 
@@ -44,11 +44,11 @@ const Card = ({ isHover, setHover }: IServicesCard) => (
 				include Digital & Product Strategy, Experience Design, Software
 				Engineering and End-to-End Agile Delivery.
 			</p>
-
-			<p className={`text-${!isHover ? '[#a0a0a0]' : 'white'} text-2xl`}>
+			<p className={`${!isHover ? 'text-[#a0a0a0]' : 'text-white'} text-2xl`}>
 				Our goal is to solve user problems by using a tailored and innovative
 				approach that ultimately helps our clients achieve their objectives.
 			</p>
 		</div>
 	</div>
 )
+// https://parall.ax
